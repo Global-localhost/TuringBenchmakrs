@@ -1,0 +1,10 @@
+name = "TuringBenchmarks"
+uuid = "86ec9e97-7049-42d3-8560-e5fa8010e5ff"
+authors = ["Arthur Lui <luiarthur@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
+Turing = "fce5fe82-541a-59a6-adf8-730c64b5f9a0"
