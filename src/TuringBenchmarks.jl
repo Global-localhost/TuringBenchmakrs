@@ -1,19 +1,11 @@
 module TuringBenchmarks
 
-include("abstract-types.jl")
+using Turing
+using Distributions
+using BenchmarkTools
+using PyCall  # ensure this uses a venv. may need a Pkg.build for PyCall.
 
-# Julia experiments.
-include("experiments/turing-experiment.jl")
-include("experiments/soss-experiment.jl")
-include("experiments/gen-experiment.jl")
-
-# Python experiments.
-include("experiments/stan-experiment.jl")
-include("experiments/pyro-experiment.jl")
-include("experiments/numpyro-experiment.jl")
-include("experiments/tfp-experiment.jl")
-
-# R experiments.
-include("experiments/nimble-experiment.jl")
+export BenchmarkSuite
+include("benchmark-helpers.jl")
 
 end # module
